@@ -17,14 +17,14 @@
 
     <header class="header" id="header">
         <nav class="navbar container">
-            <a href="#" class="nav-logo">R&B FARMS</a>
+            <a href="index.html" class="nav-logo">R&B FARMS</a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#hero" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About Us</a></li>
-                <li><a href="#products" class="nav-link">Products</a></li>
-                <li><a href="#process" class="nav-link">Our Process</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="process.html" class="nav-link">Our Process</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="mobile-menu-toggle" id="mobile-menu-toggle">
                 <i data-lucide="menu"></i>
@@ -36,19 +36,16 @@
 
         <section class="hero" id="hero">
             <div class="hero-video-wrapper">
-                <iframe
-                    class="hero-video"
-                    src="https://www.youtube.com/embed/tytjaTb9mUE?autoplay=1&mute=1&loop=1&playlist=tytjaTb9mUE&controls=0&playsinline=1&enablejsapi=1"
-                    frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                    title="INTRODUCING R&B FARMS, GHANA'S BIGGEST INLAND FISH FARM"
-                ></iframe>
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="assets/hero-video.mp4" type="video/mp4">
+                    <source src="assets/hero-video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="hero-content">
                 <h1 class="reveal">Cultivating Quality, Nurturing Nature</h1>
                 <p class="reveal" style="transition-delay: 0.2s;">Your trusted source for premium, sustainably farmed Tilapia and Catfish, delivered from our waters to your table.</p>
-                <a href="#products" class="btn btn-primary reveal" style="transition-delay: 0.4s;">Explore Our Products</a>
+                <a href="products.html" class="btn btn-primary reveal" style="transition-delay: 0.4s;">Explore Our Products</a>
             </div>
         </section>
 
@@ -80,12 +77,12 @@
                     <p>Tons Harvested Annually</p>
                 </div>
                 <div class="stat-item reveal" style="transition-delay: 0.4s;">
-                    <i data-lucide="smile" class="stat-icon"></i>
+                    <i data-lucide="smile"></i>
                     <h3 class="stat-number" data-target="1200">0</h3>
                     <p>Happy Customers</p>
                 </div>
                 <div class="stat-item reveal" style="transition-delay: 0.6s;">
-                    <i data-lucide="map-pin" class="stat-icon"></i>
+                    <i data-lucide="map-pin"></i>
                     <h3 class="stat-number" data-target="45">0</h3>
                     <p>Acres of Farmland</p>
                 </div>
@@ -163,24 +160,34 @@
                 </div>
                 <div class="media-gallery-grid">
                     <div class="media-thumbnail reveal" data-type="youtube" data-src="https://www.youtube.com/embed/OE-ckR1gC58?autoplay=1&playsinline=1&enablejsapi=1" data-thumb="https://img.youtube.com/vi/OE-ckR1gC58/hqdefault.jpg" style="transition-delay: 0.1s;">
-                        <img src="https://img.youtube.com/vi/OE-ckR1gC58/hqdefault.jpg" alt="Aquaculture with R&B Farms Limited">
-                        <div class="play-icon-wrapper"><i data-lucide="play-circle" style="width: 60px; height: 60px;"></i></div>
+                        <div class="media-content-wrapper">
+                            <img src="https://img.youtube.com/vi/OE-ckR1gC58/hqdefault.jpg" alt="Aquaculture with R&B Farms Limited">
+                            <div class="play-icon-wrapper"><i data-lucide="play-circle" style="width: 60px; height: 60px;"></i></div>
+                        </div>
                         <h3>Aquaculture Insights</h3>
                     </div>
                     <div class="media-thumbnail reveal" data-type="image" data-src="assets/gallery-action-feeding.jpg" style="transition-delay: 0.15s;">
-                        <img src="assets/gallery-action-feeding.jpg" alt="Feeding Time">
+                        <div class="media-content-wrapper">
+                            <img src="assets/gallery-action-feeding.jpg" alt="Feeding Time">
+                        </div>
                         <h3>Feeding Time</h3>
                     </div>
                     <div class="media-thumbnail reveal" data-type="image" data-src="assets/gallery-action-harvesting.jpg" style="transition-delay: 0.2s;">
-                        <img src="assets/gallery-action-harvesting.jpg" alt="Harvesting the Catch">
+                        <div class="media-content-wrapper">
+                            <img src="assets/gallery-action-harvesting.jpg" alt="Harvesting the Catch">
+                        </div>
                         <h3>Harvesting the Catch</h3>
                     </div>
                     <div class="media-thumbnail reveal" data-type="image" data-src="assets/gallery-people-collaboration.jpg" style="transition-delay: 0.25s;">
-                        <img src="assets/gallery-people-collaboration.jpg" alt="Team Collaboration">
+                        <div class="media-content-wrapper">
+                            <img src="assets/gallery-people-collaboration.jpg" alt="Team Collaboration">
+                        </div>
                         <h3>Team Collaboration</h3>
                     </div>
                     <div class="media-thumbnail reveal" data-type="image" data-src="assets/about-farm-landscape.jpg" style="transition-delay: 0.95s;">
-                        <img src="assets/about-farm-landscape.jpg" alt="Our Pristine Farm">
+                        <div class="media-content-wrapper">
+                            <img src="assets/about-farm-landscape.jpg" alt="Our Pristine Farm">
+                        </div>
                         <h3>Our Pristine Farm</h3>
                     </div>
                 </div>
@@ -272,7 +279,27 @@
     </footer>
 
     <div class="media-modal" id="media-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Video Player -->
+                <video id="modal-video-player" controls preload="auto" style="display: none;">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Image Viewer -->
+                <img id="modal-image-viewer" src="" alt="Gallery Image" style="display: none;">
+                <!-- YouTube Player -->
+                <iframe id="modal-youtube-player"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="display: none;"
+                ></iframe>
+            </div>
         </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
