@@ -1,0 +1,63 @@
+/* =================== SERVICES PAGE STYLES =================== */
+
+/* Page Header Banner */
+.page-header {
+    /* Updated path for assets - checking if '../assets' is necessary based on the HTML links */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('../assets/about-farm-landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--text-headings);
+    margin-top: 60px; /* Adjust if header height changes */
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    /* Inherits border, shadow, background from global.css (product-card/media-thumbnail styles) */
+    background-color: var(--background-secondary);
+}
+
+.service-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card-content {
+    padding: 1.5rem;
+}
+
+.service-card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-headings);
+}
+
+.service-card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* The detailed contact grid styles have been moved to css/contact-details.css 
+    to be reused on multiple pages.
+*/
